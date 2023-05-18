@@ -1,0 +1,178 @@
+html {
+  background-color: #B1CF95;
+}
+.mainHeading {
+  text-align:center;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  background-color: white;
+}
+
+img {
+  margin-top: -12em;
+}
+.whaleImage {
+  margin-right: 24em;
+}
+
+.firstimage {
+  margin-left: 30em;
+  margin-top: -1em;
+}
+
+.firstsectiontitles {
+  margin-left: 37em;
+}
+
+.Introduction {
+  margin-left: 2em;
+  padding-top: 0em;
+  width: 8em;
+}
+
+.BaleenWhales {
+  margin-left: 20em;
+  margin-top: 3em;
+  width: 53em;
+}
+
+
+.ToothedWhales {
+  margin-top: 14em;
+}
+
+.Importantstatistics {
+  margin-left: 6em;
+}
+
+.ToothedWhalesinformation {
+  margin-top: -91em;
+  margin-left: 47em;
+}
+
+.Importantstatistics {
+  margin-left: 18em;
+  padding-bottom: 1em;
+}
+
+.Secondsection {
+  margin-top: 8em;
+  margin-left: 43em;
+}
+
+.Chartimage {
+  margin-top: 33em;
+  margin-left: 6em;
+}
+
+.Thirdsection {
+  margin-left: 22em;
+}
+
+.Fourthsection {
+  margin-bottom: -24em;
+  margin-top: 14em;
+  margin-left: -1em;
+}
+
+.Firstchart {
+  margin-left: 5em;
+  margin-bottom:26em;
+}
+
+.Thirdtitle {
+  margin-left: 14em;
+}
+
+
+.Status {
+  padding-bottom: 20em;
+}
+
+
+/* Got source from https://layout.bradwoods.io/customize
+    to generate HTML and CSS layout */
+.layout {
+  width: 1024px;
+  height: 768px;
+
+  display: flex;
+  flex-direction: column;
+  grid:
+    "sidebar body secondbody" 1fr
+    / auto 1fr 1fr;
+  gap: 8px;
+  /* Font is Eras ITC from https://stackoverflow.com/questions/23608504/css-code-for-eras-light-itc */
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+}
+
+.sidebar { 
+    grid-area: sidebar; 
+    margin-left: 5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+  color:black;
+}
+.body { 
+  grid-area: body; 
+  margin: auto;
+  margin-top: 1em;
+  background-color: white;
+  width: 89em;
+}
+
+
+.whaleImage {
+  text-align: center;
+}
+
+.secondbody { 
+  grid-area: secondbody;
+  margin: auto;
+  margin-right: -9em;
+  margin-top: -19em;
+}
+
+.linegraph {
+  padding: auto;
+}
+
+.Secondtitle {
+  margin-left: -6em;
+}
+
+.Paragraph {
+  margin-left:-15em;
+}
+
+.Secondchart {
+  margin-left: -10em;
+  margin-top: -8em;
+}
+
+.Context {
+  margin-left: 20em;
+}
+
+.Contextexplanation {
+  padding-left: 20em;
+}
+
+.Barchart2 {
+  margin-left: 25em;
+  margin-top: -8em;
+}
+
+.Context1 {
+  padding-right: 30em;
+}
+
+
+
+
+

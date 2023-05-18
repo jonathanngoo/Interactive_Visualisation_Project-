@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whales classified as Endangered</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <h1 class="mainHeading">
+      Whales classified <br />
+      as Endangered
+    </h1>
+    <!-- Got source from https://layout.bradwoods.io/customize
+    to generate HTML and CSS layout -->
+    <section class="layout">
+      <!-- <div class="sidebar">
+        <ul>
+          <li>
+            <a href="introduction">Introduction</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="Amountofwhales">Amount of whales</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="Whalepopulation">Whale population</a>
+          </li>
+        </ul>
+      </div> -->
+      <div class="body">
+        <img
+          src="3D_Whale.png"
+          class="firstimage"
+          alt="3D animated image"
+          width="600"
+          height="600"
+        />
+        <div class="firstsectiontitles">
+          <h2 class="whaleImage">Whale image</h2>
+          <div class="Introduction">
+            <h3 class="Introduction">Introduction</h3>
+          </div>
+        </div>
+        <div class="BaleenWhales">
+          <h2>Baleen Whales</h2>
+          <p>
+            Contain plates/sheets and relies on <br />
+            seawater.
+          </p>
+          <p>Their size is larger compared to other whales.</p>
+          <p>
+            Most whales travel from cold areas where they feed <br />
+            to warm areas to breed (WDC, 2023).
+          </p>
+          <div class="ToothedWhales">
+            <img
+              src="Toothed_Whales.webp"
+              alt="Toothed Whales"
+              width="400"
+              height="300"
+            />
+          </div>
+        </div>
+        <div class="Importantstatistics">
+          <h3 class="Importantstatistics">Important statistics</h3>
+        </div>
+        <div class="Thirdsection">
+          <div class="Status">
+            <h1>Status: Endangered</h1>
+          </div>
+          <div class="Fourthsection">
+            <h2>Explanation</h2>
+            <p>
+              Whales are located within all oceans. <br />
+              Such as:
+            </p>
+            <li>Temperate</li>
+            <li>Equator</li>
+            <li>Arctic</li>
+            <li>Antractic</li>
+            <p>(ifaw,2023).</p>
+            <h2>Importance of this location</h2>
+            <p>Factors affect the distribution of whale's habitat.</p>
+            <li>Food Supply</li>
+            <li>Size</li>
+            <li>Mating grounds</li>
+            <p>
+              Whale's who travel from cold to tropical areas <br />
+              when transitioning between feeding and mating periods <br />
+              tends to carry seasonal reproductive cycles and <br />
+              gestation periods (n.d, 2023).
+            </p>
+            <div class="Firstchart">
+              <div class="Thirdtitle">
+              <h2>
+                Number of whales killed <br />
+                globally per decade
+              </h2>
+            </div>
+          </div>
+        </div>
+        <h2>Explanation</h2>
+            <p>
+              The graph shows the number of whales killed from 1900 <br />
+              to 2010 (OurWorldInData, 2023). X axis represents year <br />
+              and Y is All species. Additionally, each point displays the <br />
+              number of whales killed as indicated by a blue dot.
+            </p>
+            <p>In 1960, 700,000 whales are killed</p>
+        </div>
+      </div>
+      <div class="secondbody">
+        <div class="ToothedWhalesinformation">
+          <img
+            src="Baleen_Whale.jpeg"
+            alt="Baleen Whales"
+            width="400"
+            height="300"
+          />
+          <h2>Toothed Whales</h2>
+          <p>
+            Use their teeth to capture fish, sea <br />
+            creates and squid.
+          </p>
+          <p>
+            Has a sense of smell called echolocation (binsonar) <br />
+            by hunting and viewing the sea.
+          </p>
+          <p>Contains 77 toothed whales.</p>
+        </div>
+        <div class="Secondsection">
+          <h2>Explanation</h2>
+          <p>
+            Whales are part of the food chain and contributes to <br />
+            marine life.
+          </p>
+          <p>
+            Due to their size and aura, 6 out of 13 whales species <br />
+            are endangered.
+          </p>
+          <h2>Importance of this status</h2>
+          <p><b>Commerical Whaling</b></p>
+          <p>
+            There are three countries that <br />
+            are practising this method.
+          </p>
+          <li>Iceland</li>
+          <li>Japan</li>
+          <li>Norway</li>
+          <p>
+            1,000 whales each year were killed due to commercial <br />
+            purposes.
+          </p>
+          <p><b>Climate Change</b></p>
+          <p>
+            Oceans with rising temperatures and lack of sea ice within <br />
+            Arctic and Antarctic impacts habitat and resource of <br />
+            whales (WWF, 2023).
+          </p>
+          <p>
+            Humpbacks and blues may travel for long distances to <br />
+            capture food.
+          </p>
+          <h2>Location: Ocean</h2>
+          <div class="Chartimage">
+            <h2>Chart image</h2>
+            <div id="linegraph"></div>
+            <p>(OurWorldInData,2023)</p>
+            <div class="Secondtitle">
+              <h2>
+                Reasons behind this <br />
+                graph
+              </h2>
+              <div class="Paragraph">
+                <p>
+                  Technological advances relating to cosmetic, food, and textile
+                  sectors are affordable and easier to access
+                  (OurWorldinData,2023).
+                </p>
+                <p>
+                  In 1980, countries around the world are starting to join IWC
+                  (International Whaling Commission).
+                </p>
+                <p>
+                  It creates oil, blubber (fat), meat and lighting (Starbuck,
+                  1978).
+                </p>
+                <p>
+                  Ultised for fashion, perfume and accessories (Tonnessen and
+                  Johnsen, n.d).
+                </p>
+                <p>
+                  Generate substance called Ambergris - located in sperm whale's
+                  intestines.
+                </p>
+                <h2>Context</h2>
+                <div class="Context1">
+                <p>There's more killings within the southern hemisphere because 
+                  of the variety of breeding populations available. Example is 
+                  breeding stock A located in east coast of South Amercica (Zerbini,2019). 
+                </p>
+              </div>
+                <p></p>
+              <div class="Barchart2">
+              <div id="barchart2"></div>
+              </div>
+                <div class="Thirdtitle">
+                  <h2>
+                    The decline of global <br />
+                    whale populations
+                  </h2>
+                </div>
+                <div class="Context">
+                  <h2>Context</h2>
+                </div>
+                <div class="Contextexplanation">
+                <p>Our World in Data (2023) shows the populations of whales decreasing 
+                  from 1890 to 2001. X axis is Year and Y is whale population. And 
+                  the different coloured bar charts are names of <br/> each whale.
+                </p>
+              </div>
+                <div class="Secondchart">
+                  <div id="barchart"></div>
+                </div>
+                <h2>Reasons behind this <br/>
+                graph</h2>
+                <p>Commercial Whaling has been around since the ban on international trade of whale products. 
+                  There are three countries that is still continuing this practice today. 
+                  <li>Iceland</li>
+                  <li>Japan</li>
+                  <li>Norway</li>
+                </p>
+                <p>Additionally, Climate Change impacts whales by increased temperatures on ocean and 
+                  lack of sea ice in Antarctic and Arctic oceans. Meaning, whales will travel long
+                  distances to find food (WWF, 2023). 
+                </p>
+                <h2>How can we solve <br/> this problem?</h2>
+                <li>Track your carbon footprint
+                  <p>By travelling less and reducing energy consumption, 
+                    it allows whales to breathe oxygen within their environment.
+                  </p>
+                </li>
+                <li>Use less plastics/no plastics
+                  <p>Purchase recycled products from 
+                    shops or online and switching to 
+                    re-usable bags. 
+                  </p> </li>
+                <li>Follow organisations that address this issue 
+                  <p>Most non-profit organisations and institutions
+                    work towards ocean habitat and marine wildlife.
+                    By volunteering at organisations by working/donation (ThepoorTraveler, 2015).
+                  </p>
+                </li>
+               </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
