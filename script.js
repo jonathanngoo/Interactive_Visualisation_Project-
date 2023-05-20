@@ -28,6 +28,7 @@ Plotly.d3.csv("whales-killed-per-decade-final.csv", (whale_data) => {
   // Layout including title, x and y axis from https://plotly.com/javascript/legend/
   let layout = {
     title: "Whales killed per decade",
+    width:400,
     xaxis: {
       title: "Year",
       showgrid: false,
