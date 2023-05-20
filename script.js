@@ -8,8 +8,10 @@ Plotly.d3.csv("whales-killed-per-decade-final.csv", (whale_data) => {
     x: Year,
     y: allSpecies,
     hovertemplate: "%{y:.f}",
-    mode: "scatter",
+    mode: "lines+text",
     name: "All species",
+    text: ["52110", "", "", "", "", "", "703235", "", "", "", "", "13832"],
+    textposition: "top",
   };
 
   //   let data = [
@@ -86,6 +88,7 @@ Plotly.d3.csv(
 
       traces.push({
         name: entity[i],
+        x: data.x.slice(),
         y: data.y.slice(),
         id: data.id.slice(),
         text: data.text.slice(),
@@ -195,7 +198,10 @@ Plotly.d3.csv(
 
 Plotly.d3.csv("whale-catch - Sheet1.csv", (whale_data) => {
   const Entity = unpack(whale_data, "Entity");
-  const allSpecies = unpack(whale_data, "All whale species (Rocha et al.; IWC)");
+  const allSpecies = unpack(
+    whale_data,
+    "All whale species (Rocha et al.; IWC)"
+  );
 
   var trace1 = {
     x: Entity,
@@ -204,10 +210,9 @@ Plotly.d3.csv("whale-catch - Sheet1.csv", (whale_data) => {
     type: "bar",
     name: "Whale population in 1960",
     marker: {
-      color: ['#D95040','#1C428D']
-    }
+      color: ["#D95040", "#1C428D"],
+    },
   };
-
 
   let layout = {
     title: "Whale population in 1960",
