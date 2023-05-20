@@ -1,5 +1,6 @@
 const unpack = (data, key) => data.map((row) => row[key]);
 
+// Create a line graph for first chart
 Plotly.d3.csv("whales-killed-per-decade-final.csv", (whale_data) => {
   const Year = unpack(whale_data, "Year");
   const allSpecies = unpack(whale_data, "All species (Rocha et al. & IWC)");
@@ -28,7 +29,7 @@ Plotly.d3.csv("whales-killed-per-decade-final.csv", (whale_data) => {
   // Layout including title, x and y axis from https://plotly.com/javascript/legend/
   let layout = {
     title: "Whales killed per decade",
-    width:400,
+    width: 400,
     xaxis: {
       title: "Year",
       showgrid: false,
@@ -46,6 +47,7 @@ Plotly.d3.csv("whales-killed-per-decade-final.csv", (whale_data) => {
   Plotly.newPlot("linegraph", data, layout);
 });
 
+// Third bar chart including animation
 // Animation bar graph from 1890 to 2001 using this link: https://plotly.com/javascript/gapminder-example/
 Plotly.d3.csv(
   "The decline of global whale populations in 1890 and 2001 - Sheet1.csv",
@@ -197,6 +199,7 @@ Plotly.d3.csv(
   }
 );
 
+// Bar chart for second graph to show a specific data point from first graph
 Plotly.d3.csv("whale-catch - Sheet1.csv", (whale_data) => {
   const Entity = unpack(whale_data, "Entity");
   const allSpecies = unpack(
